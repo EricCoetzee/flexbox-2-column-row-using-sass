@@ -1,0 +1,48 @@
+/* Sass Imports*/
+@import './variables';
+@import './resets';
+@import './maps';
+@import './functions';
+@import './mixin';
+
+/*Sass Functions*/
+
+
+/*Sass in Action*/
+ body{
+
+    /* Color from _variables.scss*/
+     background: $primary-color;
+     color: $text-color;
+    
+ }
+
+ .flex-container{
+    /*flexCenter from _mixin.scss */
+    @include flexCenter(row);
+
+    width: 98%;
+    margin: 0 auto;
+
+     
+    /*Nested HTML div with class="logo_div". See position!*/
+    .div_one{
+
+        /*Function from _function.scss*/
+        font-weight: weight(medium);
+        background-color: $secondary-color;
+        width: 49.5%;
+        margin: .25% .25% ;
+        text-align: center;
+        line-height: 75px;
+
+        /*Nested inside of .logo_div*/
+        &:hover{
+            color: $primary-color;
+        }
+    }
+ }
+ .img{
+    width: 100%; 
+    height: 500px;
+ }

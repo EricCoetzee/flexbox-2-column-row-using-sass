@@ -1,0 +1,58 @@
+/* Sass Imports*/
+/* Variable Partials from _variables.scss*/
+/* Reset Partials from _resets.scss*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Map Partials from _map.scss*/
+/* Function Partials from _functions.scss*/
+/*way to shorten map.get($map: , $key: );*/
+/*For flexCenter*/
+/*Sass Functions*/
+/*Sass in Action*/
+body {
+  /* Color from _variables.scss*/
+  background: #fff;
+  color: #ff66c4;
+}
+
+.flex-container {
+  /*flexCenter from _mixin.scss */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 98%;
+  margin: 0 auto;
+  /*Nested HTML div with class="logo_div". See position!*/
+}
+
+.flex-container .div_one {
+  /*Function from _function.scss*/
+  font-weight: 650;
+  background-color: #c7d0d8;
+  width: 49.5%;
+  margin: .25% .25%;
+  text-align: center;
+  line-height: 75px;
+  /*Nested inside of .logo_div*/
+}
+
+.flex-container .div_one:hover {
+  color: #fff;
+}
+
+.img {
+  width: 100%;
+  height: 500px;
+}
+/*# sourceMappingURL=main.css.map */
